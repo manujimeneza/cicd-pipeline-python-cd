@@ -3,12 +3,9 @@
 import os
 
 from flask import Flask, render_template, request
-from flask_wtf.csrf import CSRFProtect
 from .calculadora import sumar, restar, multiplicar, dividir
 
 app = Flask(__name__)
-app.config["SECRET_KEY"] = os.environ.get("FLASK_SECRET_KEY")
-CSRFProtect(app)
 
 
 @app.route("/", methods=["GET", "POST"])
