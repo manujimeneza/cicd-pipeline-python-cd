@@ -1,5 +1,3 @@
-import os
-
 """Rutas y configuración de la aplicación web de la calculadora."""
 
 import os
