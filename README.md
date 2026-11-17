@@ -71,7 +71,7 @@ Otras mejoras posibles serían HTTPS con un certificado de ACM en el ALB y el us
 
 **David Moreno Moran:** Me pareció sencillo implementar potencia y módulo y ver cómo el pipeline llevó los cambios por sus distintas etapas hasta Staging y Producción. El CI/CD fue útil porque automatizó las pruebas y los despliegues, y permitió comprobar que las funcionalidades nuevas estuvieran listas antes de publicarlas. Lo menos útil me pareció tener que aprobar manualmente el paso a Producción después de que ya se ejecutaron las pruebas de aceptación; esa aprobación agrega una pausa que podría no ser necesaria en este flujo.
 
-**Angélica Martínez Carmona:** _(pendiente)_
+**Angélica Martínez Carmona:** Todo fue útil: al automatizar, se optimizan el tiempo y la calidad del despliegue.
 
 ### 7. Entrega Continua y rollback
 
