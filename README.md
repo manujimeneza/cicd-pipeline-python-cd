@@ -19,6 +19,8 @@ Production: http://calculadora-production-alb-645497884.us-east-1.elb.amazonaws.
 
 ![Target Group de Producción saludable](docs/evidencias/target-groups.png)
 
+![Target Group de Staging saludable](docs/evidencias/target-groups-staging.png)
+
 ## Respuestas
 
 ### 1. Flujo completo del pipeline
