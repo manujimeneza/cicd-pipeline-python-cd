@@ -15,6 +15,8 @@ Staging:    http://calculadora-staging-alb-1208027087.us-east-1.elb.amazonaws.co
 Production: http://calculadora-production-alb-645497884.us-east-1.elb.amazonaws.com
 ```
 
+![Prueba manual de la operación nueva en Staging antes de aprobar Producción](docs/evidencias/staging.png)
+
 ![Operación nueva en Producción](docs/evidencias/produccion.png)
 
 ![Target Group de Producción saludable](docs/evidencias/target-groups.png)
@@ -67,7 +69,7 @@ Otras mejoras posibles serían HTTPS con un certificado de ACM en el ALB y el us
 
 **Manuela Jimenez Arredondo:** Me pareció muy útil ver el flujo completo: al integrar el PR de potencia y módulo, el pipeline probó el código, desplegó a Staging, corrió las pruebas allí y solo esperó la aprobación para llegar a Producción, sin ningún paso manual en AWS. Lo más difícil fue la configuración inicial. El contenedor no mostraba el formulario porque la aplicación usaba protección CSRF y nadie le pasaba `FLASK_SECRET_KEY`, así que la quitamos como indica la guía y aceptamos el issue en SonarCloud. Después las pruebas de Staging salían con la página en blanco porque Chrome intentaba usar HTTPS y el ALB solo atiende HTTP. Además, Homebrew no pudo instalar AWS CLI en mi Mac con procesador Intel y tuve que usar el instalador oficial. Lo menos útil fue tener que renovar las credenciales de AWS Academy en cada sesión del laboratorio.
 
-**David Moreno Moran:** _(pendiente)_
+**David Moreno Moran:** Me pareció sencillo implementar potencia y módulo y ver cómo el pipeline llevó los cambios por sus distintas etapas hasta Staging y Producción. El CI/CD fue útil porque automatizó las pruebas y los despliegues, y permitió comprobar que las funcionalidades nuevas estuvieran listas antes de publicarlas. Lo menos útil me pareció tener que aprobar manualmente el paso a Producción después de que ya se ejecutaron las pruebas de aceptación; esa aprobación agrega una pausa que podría no ser necesaria en este flujo.
 
 **Angélica Martínez Carmona:** _(pendiente)_
 
