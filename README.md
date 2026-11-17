@@ -14,11 +14,14 @@ Manuela Jimenez Arredondo manujimeneza (Propietaria del repositorio) | David Mor
 Staging:    http://calculadora-staging-alb-1208027087.us-east-1.elb.amazonaws.com
 Production: http://calculadora-production-alb-645497884.us-east-1.elb.amazonaws.com
 ```
-
+### Prueba Manual en el ambiente de staging
 ![Prueba manual de la operación nueva en Staging antes de aprobar Producción](docs/evidencias/staging.png)
 
+### Prueba en producciòn post deploy
 ![Operación nueva en Producción](docs/evidencias/produccion.png)
 
+
+### Pantallazo de AWS 
 ![Target Group de Producción saludable](docs/evidencias/target-groups.png)
 
 ![Target Group de Staging saludable](docs/evidencias/target-groups-staging.png)
