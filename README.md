@@ -2,4 +2,4 @@
 
 ## Integrantes
 
-Manuela Jimenez Arredondo manujimeneza | David Moreno Moran davidgmoreno (Propietario repositorio) | Angélica Martínez Carmona amcangelica
+Manuela Jimenez Arredondo manujimeneza (Propietaria del repositorio) | David Moreno Moran davidgmoreno | Angélica Martínez Carmona amcangelica
