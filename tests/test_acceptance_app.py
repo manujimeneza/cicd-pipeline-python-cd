@@ -17,7 +17,13 @@ def browser():
     options = webdriver.ChromeOptions()
     options.add_argument("--headless")  # Ejecuta sin interfaz gráfica
     options.add_argument("--no-sandbox")  # Necesario para algunos entornos
-    options.add_argument("--disable-dev-shm-usage")  # Necesario para algunos entornos
+    options.add_argument("--disable-dev-shm-usage")
+    # Las versiones nuevas de Chrome intentan pasar http:// a https:// y el ALB solo
+    # atiende HTTP (puerto 80), lo que deja la página en blanco en Staging.
+    options.add_argument(
+        "--disable-features=HttpsUpgrades,HttpsFirstBalancedModeAutoEnable,"
+        "HttpsFirstModeV2ForTypicallySecureUsers"
+    )  # Necesario para algunos entornos
     driver = webdriver.Chrome(options=options)
 
     # Opción 2: Firefox (headless)
